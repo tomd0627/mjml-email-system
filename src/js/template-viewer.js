@@ -82,7 +82,7 @@ export class TemplateViewer {
     const placeholder = document.createElement('div');
     placeholder.className = 'viewer-placeholder';
     placeholder.innerHTML = `
-      <span class="viewer-placeholder__icon" aria-hidden="true">👆</span>
+      <svg class="viewer-placeholder__icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
       <p>Select a template from the gallery above to inspect it here.</p>
     `;
     this.#container.appendChild(placeholder);
