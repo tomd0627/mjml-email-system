@@ -840,6 +840,7 @@ header[role="banner"] {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
+  object-position: top;
   background-color: var(--color-bg-elevated);
 }
 
