@@ -1,0 +1,221 @@
+<mjml>
+  <mj-head>
+    <mj-title>25% Off Everything — This Weekend Only · Acme Corp</mj-title>
+    <mj-preview>Our biggest sale of the year. Use code SPRING25 at checkout. Ends Sunday at midnight.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#1a1a2e" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media (prefers-color-scheme: dark) {
+        .email-body   { background-color: #0c1220 !important; }
+        .email-wrap   { background-color: #131c2e !important; }
+        .product-card { background-color: #1a2540 !important; border-color: #1e2d4a !important; }
+        .text-dark    { color: #e8f0ff !important; }
+        .text-muted   { color: #7a8aaa !important; }
+        .footer-bg    { background-color: #0c1220 !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f6f9" css-class="email-body">
+
+    <!-- Header -->
+    <mj-section background-color="#0c1220" padding="20px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="20px" font-weight="700" color="#b8ff57" letter-spacing="-0.5px">
+          Acme Corp
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-size="12px" color="#7a8aaa" padding-top="6px">
+          <a href="#" style="color:#7a8aaa;text-decoration:none;">View in browser</a>
+          &nbsp;·&nbsp;
+          <a href="#" style="color:#7a8aaa;text-decoration:none;">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero Image -->
+    <mj-section background-color="#0c1220" padding="0" css-class="email-wrap">
+      <mj-column padding="0">
+        <mj-image
+          src="https://placehold.co/600x300/0c1220/b8ff57?text=SPRING+SALE+2026"
+          alt="Acme Corp Spring Sale 2026 — 25% off everything"
+          width="600px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Headline -->
+    <mj-section background-color="#0c1220" padding="40px 32px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text align="center" font-size="11px" font-weight="700" color="#ff7c38" letter-spacing="2px" text-transform="uppercase" padding-bottom="12px">
+          Limited Time Offer
+        </mj-text>
+        <mj-text align="center" font-size="36px" font-weight="800" color="#e8f0ff" line-height="1.2" padding-bottom="12px" css-class="text-dark">
+          25% Off<br />Everything.
+        </mj-text>
+        <mj-text align="center" font-size="16px" color="#7a8aaa" line-height="1.6" padding-bottom="24px" css-class="text-muted">
+          Our biggest sale of the year — all plans, all add-ons, no exceptions.<br />Ends Sunday, March 23 at midnight PT.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Coupon Code -->
+    <mj-section background-color="#0c1220" padding="0 32px 40px" css-class="email-wrap">
+      <mj-column>
+        <mj-text
+          align="center"
+          font-size="13px"
+          color="#7a8aaa"
+          padding-bottom="8px"
+          css-class="text-muted"
+        >
+          Use code at checkout
+        </mj-text>
+        <mj-text
+          align="center"
+          font-size="28px"
+          font-weight="800"
+          color="#b8ff57"
+          letter-spacing="6px"
+          font-family="'Courier New', 'Lucida Console', monospace"
+          padding="16px 24px"
+          container-background-color="#131c2e"
+        >
+          SPRING25
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#4a5568" padding-top="8px" css-class="text-muted">
+          One use per account · Cannot be combined with other offers
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#0c1220" padding="0 32px 48px" css-class="email-wrap">
+      <mj-column>
+        <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:48px;v-text-anchor:middle;width:220px;" arcsize="12%" stroke="f" fillcolor="#b8ff57">
+          <w:anchorlock/>
+          <center style="color:#0c1220;font-family:sans-serif;font-size:16px;font-weight:700;">Shop the Sale</center>
+        </v:roundrect>
+        <![endif]-->
+        <!--[if !mso]><!-->
+        <mj-button background-color="#b8ff57" color="#0c1220" font-weight="700" border-radius="6px" href="#" font-size="16px" inner-padding="14px 40px">
+          Shop the Sale
+        </mj-button>
+        <!--<![endif]-->
+      </mj-column>
+    </mj-section>
+
+    <!-- Section label -->
+    <mj-section background-color="#ffffff" padding="32px 32px 16px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" css-class="text-muted">
+          Popular Plans
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product Grid Row 1 -->
+    <mj-section background-color="#ffffff" padding="0 24px 8px" css-class="email-wrap">
+
+      <mj-column padding="8px" border-radius="8px" border="1px solid #e2e8f0" css-class="product-card">
+        <mj-text font-size="15px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Starter
+        </mj-text>
+        <mj-text font-size="22px" font-weight="800" color="#b8ff57" padding-bottom="4px">
+          $15<span style="font-size:13px;font-weight:400;color:#718096;">/mo</span>
+        </mj-text>
+        <mj-text font-size="12px" color="#a0aec0" padding-bottom="4px">
+          <s>$20/mo</s> — save $5
+        </mj-text>
+        <mj-text font-size="13px" color="#4a5568" line-height="1.6" css-class="text-muted">
+          Up to 3 team members · 10 projects · Community support
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="8px" border-radius="8px" border="2px solid #b8ff57" css-class="product-card">
+        <mj-text font-size="11px" font-weight="700" color="#ff7c38" letter-spacing="1px" text-transform="uppercase" padding-bottom="4px">
+          Most Popular
+        </mj-text>
+        <mj-text font-size="15px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Pro
+        </mj-text>
+        <mj-text font-size="22px" font-weight="800" color="#b8ff57" padding-bottom="4px">
+          $37<span style="font-size:13px;font-weight:400;color:#718096;">/mo</span>
+        </mj-text>
+        <mj-text font-size="12px" color="#a0aec0" padding-bottom="4px">
+          <s>$49/mo</s> — save $12
+        </mj-text>
+        <mj-text font-size="13px" color="#4a5568" line-height="1.6" css-class="text-muted">
+          Up to 25 team members · Unlimited projects · Priority support
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Product Grid Row 2 -->
+    <mj-section background-color="#ffffff" padding="0 24px 32px" css-class="email-wrap">
+
+      <mj-column padding="8px" border-radius="8px" border="1px solid #e2e8f0" css-class="product-card">
+        <mj-text font-size="15px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Business
+        </mj-text>
+        <mj-text font-size="22px" font-weight="800" color="#b8ff57" padding-bottom="4px">
+          $75<span style="font-size:13px;font-weight:400;color:#718096;">/mo</span>
+        </mj-text>
+        <mj-text font-size="12px" color="#a0aec0" padding-bottom="4px">
+          <s>$99/mo</s> — save $24
+        </mj-text>
+        <mj-text font-size="13px" color="#4a5568" line-height="1.6" css-class="text-muted">
+          Unlimited members · SSO · Dedicated support + SLA
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="8px" border-radius="8px" border="1px solid #e2e8f0" css-class="product-card">
+        <mj-text font-size="15px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Analytics Add-on
+        </mj-text>
+        <mj-text font-size="22px" font-weight="800" color="#b8ff57" padding-bottom="4px">
+          $60<span style="font-size:13px;font-weight:400;color:#718096;">/yr</span>
+        </mj-text>
+        <mj-text font-size="12px" color="#a0aec0" padding-bottom="4px">
+          <s>$79/yr</s> — save $19
+        </mj-text>
+        <mj-text font-size="13px" color="#4a5568" line-height="1.6" css-class="text-muted">
+          Advanced dashboards · Custom reports · Export API
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Urgency -->
+    <mj-section background-color="#fff8f0" padding="20px 32px">
+      <mj-column>
+        <mj-text align="center" font-size="14px" color="#c05c00" font-style="italic">
+          ⏰ Offer expires Sunday, March 23 at midnight Pacific Time. No extensions.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#0c1220" padding="32px" css-class="footer-bg">
+      <mj-column>
+        <mj-text font-size="12px" color="#7a8aaa" line-height="1.7" css-class="text-muted">
+          You're receiving this because you opted in to Acme Corp promotions.<br />
+          <a href="#" style="color:#7a8aaa;">Unsubscribe</a> · <a href="#" style="color:#7a8aaa;">Update preferences</a> · <a href="#" style="color:#7a8aaa;">Privacy Policy</a>
+        </mj-text>
+        <mj-text font-size="11px" color="#4a5568" padding-top="12px" css-class="text-muted">
+          Acme Corp Inc. · 123 Market Street, Suite 400 · San Francisco, CA 94105
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

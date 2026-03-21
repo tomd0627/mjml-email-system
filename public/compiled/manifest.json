@@ -1,0 +1,27 @@
+[
+  {
+    "id": "newsletter",
+    "label": "Newsletter",
+    "description": "Weekly digest with article cards and multi-column layout"
+  },
+  {
+    "id": "password-reset",
+    "label": "Password Reset",
+    "description": "Account security notification with prominent CTA"
+  },
+  {
+    "id": "promotional",
+    "label": "Promotional / Sale",
+    "description": "Marketing email with hero image, coupon code, and product grid"
+  },
+  {
+    "id": "transactional",
+    "label": "Order Confirmation",
+    "description": "Transactional receipt with item table and shipping details"
+  },
+  {
+    "id": "welcome",
+    "label": "Welcome & Onboarding",
+    "description": "User onboarding with step-by-step guide and feature highlights"
+  }
+]

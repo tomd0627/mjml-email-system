@@ -1,0 +1,198 @@
+<mjml>
+  <mj-head>
+    <mj-title>Welcome to Acme Corp — Let's Get Started</mj-title>
+    <mj-preview>Your account is ready. Here's how to make the most of Acme Corp in your first week.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#1a1a2e" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media (prefers-color-scheme: dark) {
+        .email-body   { background-color: #0c1220 !important; }
+        .email-wrap   { background-color: #131c2e !important; }
+        .step-bg      { background-color: #1a2540 !important; border-left-color: #b8ff57 !important; }
+        .feature-card { background-color: #1a2540 !important; border-color: #1e2d4a !important; }
+        .text-dark    { color: #e8f0ff !important; }
+        .text-muted   { color: #7a8aaa !important; }
+        .footer-bg    { background-color: #0c1220 !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f6f9" css-class="email-body">
+
+    <!-- Header -->
+    <mj-section background-color="#0c1220" padding="24px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" color="#b8ff57" letter-spacing="-0.5px">
+          Acme Corp
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Welcome Hero -->
+    <mj-section background-color="#0c1220" padding="48px 32px 40px" css-class="email-wrap">
+      <mj-column>
+        <mj-text align="center" font-size="48px" padding-bottom="16px">
+          👋
+        </mj-text>
+        <mj-text align="center" font-size="28px" font-weight="800" color="#e8f0ff" line-height="1.3" padding-bottom="12px" css-class="text-dark">
+          Welcome to Acme Corp,<br />Jane!
+        </mj-text>
+        <mj-text align="center" font-size="16px" color="#7a8aaa" line-height="1.7" padding-bottom="28px" css-class="text-muted">
+          Your account is set up and ready to go. We'll walk you through the three things that will get you to value the fastest.
+        </mj-text>
+        <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:48px;v-text-anchor:middle;width:200px;" arcsize="12%" stroke="f" fillcolor="#b8ff57">
+          <w:anchorlock/>
+          <center style="color:#0c1220;font-family:sans-serif;font-size:15px;font-weight:700;">Open Your Dashboard</center>
+        </v:roundrect>
+        <![endif]-->
+        <!--[if !mso]><!-->
+        <mj-button background-color="#b8ff57" color="#0c1220" font-weight="700" border-radius="6px" href="#" font-size="15px" inner-padding="14px 32px">
+          Open Your Dashboard
+        </mj-button>
+        <!--<![endif]-->
+      </mj-column>
+    </mj-section>
+
+    <!-- Getting Started Steps -->
+    <mj-section background-color="#ffffff" padding="32px 32px 8px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" css-class="text-muted">
+          Get Started in 3 Steps
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 1 -->
+    <mj-section background-color="#f7f9fc" padding="20px 32px" border-left="4px solid #b8ff57" css-class="step-bg">
+      <mj-column width="48px">
+        <mj-text font-size="24px" font-weight="800" color="#b8ff57" padding="0">
+          01
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Create your first project
+        </mj-text>
+        <mj-text font-size="14px" color="#718096" line-height="1.6" css-class="text-muted">
+          Projects are the home for your work. Give it a name, set your timezone, and invite your first teammate.
+        </mj-text>
+        <mj-text font-size="13px" padding-top="8px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Create a project →</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="20px 32px" css-class="email-wrap">
+      <mj-column width="48px">
+        <mj-text font-size="24px" font-weight="800" color="#b8ff57" padding="0">
+          02
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Connect your data sources
+        </mj-text>
+        <mj-text font-size="14px" color="#718096" line-height="1.6" css-class="text-muted">
+          We support 80+ integrations including Slack, GitHub, Jira, and Salesforce. Most take under two minutes.
+        </mj-text>
+        <mj-text font-size="13px" padding-top="8px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Browse integrations →</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f7f9fc" padding="20px 32px 32px" css-class="step-bg">
+      <mj-column width="48px">
+        <mj-text font-size="24px" font-weight="800" color="#b8ff57" padding="0">
+          03
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Set up your first automation
+        </mj-text>
+        <mj-text font-size="14px" color="#718096" line-height="1.6" css-class="text-muted">
+          Automations run on a schedule or trigger. Start with a template or build from scratch — no code required.
+        </mj-text>
+        <mj-text font-size="13px" padding-top="8px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Explore automation templates →</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Feature Highlights -->
+    <mj-section background-color="#ffffff" padding="32px 32px 16px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" css-class="text-muted">
+          What's Included on Your Plan
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="0 24px 32px" css-class="email-wrap">
+
+      <mj-column padding="12px" border="1px solid #e2e8f0" border-radius="8px" css-class="feature-card">
+        <mj-text font-size="24px" padding-bottom="8px">⚡</mj-text>
+        <mj-text font-size="14px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Real-Time Sync
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.5" css-class="text-muted">
+          Changes propagate across your stack in under 100ms.
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="12px" border="1px solid #e2e8f0" border-radius="8px" css-class="feature-card">
+        <mj-text font-size="24px" padding-bottom="8px">🔒</mj-text>
+        <mj-text font-size="14px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Role-Based Access
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.5" css-class="text-muted">
+          Granular permissions for every member of your team.
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="12px" border="1px solid #e2e8f0" border-radius="8px" css-class="feature-card">
+        <mj-text font-size="24px" padding-bottom="8px">📊</mj-text>
+        <mj-text font-size="14px" font-weight="700" color="#1a1a2e" padding-bottom="4px" css-class="text-dark">
+          Built-In Analytics
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.5" css-class="text-muted">
+          Track usage, performance, and trends without leaving Acme.
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Secondary CTA -->
+    <mj-section background-color="#f4f6f9" padding="28px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text align="center" font-size="14px" color="#718096" css-class="text-muted">
+          Need help? Our docs are thorough and our team is fast.<br />
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Browse the documentation</a>
+          &nbsp;·&nbsp;
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Chat with support</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#0c1220" padding="32px" css-class="footer-bg">
+      <mj-column>
+        <mj-text font-size="12px" color="#7a8aaa" line-height="1.7" css-class="text-muted">
+          You received this because you created an Acme Corp account.<br />
+          <a href="#" style="color:#7a8aaa;">Unsubscribe from onboarding emails</a> · <a href="#" style="color:#7a8aaa;">Privacy Policy</a>
+        </mj-text>
+        <mj-text font-size="11px" color="#4a5568" padding-top="12px" css-class="text-muted">
+          Acme Corp Inc. · 123 Market Street, Suite 400 · San Francisco, CA 94105
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,180 @@
+<mjml>
+  <mj-head>
+    <mj-title>Your Order #AC-29471 is Confirmed — Acme Corp</mj-title>
+    <mj-preview>Great news! Your order has been received and is being processed. Estimated delivery: March 24–26.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#1a1a2e" />
+      <mj-section background-color="#ffffff" padding="0" />
+    </mj-attributes>
+
+    <mj-style>
+      @media (prefers-color-scheme: dark) {
+        .email-body   { background-color: #0c1220 !important; }
+        .email-wrap   { background-color: #131c2e !important; }
+        .table-row    { border-bottom-color: #1e2d4a !important; }
+        .text-dark    { color: #e8f0ff !important; }
+        .text-muted   { color: #7a8aaa !important; }
+        .info-box     { background-color: #1a2540 !important; border-color: #1e2d4a !important; }
+        .footer-bg    { background-color: #0c1220 !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f6f9" css-class="email-body">
+
+    <!-- Header -->
+    <mj-section background-color="#0c1220" padding="24px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" color="#b8ff57" letter-spacing="-0.5px">
+          Acme Corp
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-size="13px" color="#7a8aaa" padding-top="8px">
+          Order Confirmation
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Confirmation Banner -->
+    <mj-section background-color="#0a1a0a" padding="32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text align="center" font-size="36px" padding-bottom="8px">
+          ✓
+        </mj-text>
+        <mj-text align="center" font-size="22px" font-weight="700" color="#b8ff57" padding-bottom="8px" css-class="text-dark">
+          Order Confirmed
+        </mj-text>
+        <mj-text align="center" font-size="15px" color="#7a8aaa" css-class="text-muted">
+          Order <strong style="color:#e8f0ff;">#AC-29471</strong> placed on March 20, 2026
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Order Items Table -->
+    <mj-section background-color="#ffffff" padding="32px 32px 0" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="13px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" padding-bottom="16px" css-class="text-muted">
+          Items Ordered
+        </mj-text>
+
+        <!-- Table header -->
+        <mj-table font-size="12px" color="#7a8aaa" padding-bottom="8px" css-class="text-muted">
+          <tr>
+            <td style="padding:0 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #e2e8f0;">Item</td>
+            <td style="padding:0 8px 8px;text-align:center;font-weight:700;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #e2e8f0;">Qty</td>
+            <td style="padding:0 0 8px;text-align:right;font-weight:700;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #e2e8f0;">Price</td>
+          </tr>
+        </mj-table>
+
+        <!-- Item rows -->
+        <mj-table font-size="14px" color="#1a1a2e" css-class="text-dark">
+          <tr>
+            <td style="padding:14px 0;border-bottom:1px solid #e2e8f0;" class="table-row">
+              Acme Pro Annual Plan<br />
+              <span style="font-size:12px;color:#718096;">Up to 25 team members · Unlimited projects</span>
+            </td>
+            <td style="padding:14px 8px;text-align:center;border-bottom:1px solid #e2e8f0;" class="table-row">1</td>
+            <td style="padding:14px 0;text-align:right;border-bottom:1px solid #e2e8f0;" class="table-row">$299.00</td>
+          </tr>
+          <tr>
+            <td style="padding:14px 0;border-bottom:1px solid #e2e8f0;" class="table-row">
+              Advanced Analytics Add-on<br />
+              <span style="font-size:12px;color:#718096;">12-month license · Includes onboarding call</span>
+            </td>
+            <td style="padding:14px 8px;text-align:center;border-bottom:1px solid #e2e8f0;" class="table-row">1</td>
+            <td style="padding:14px 0;text-align:right;border-bottom:1px solid #e2e8f0;" class="table-row">$79.00</td>
+          </tr>
+          <tr>
+            <td style="padding:14px 0;color:#718096;" class="text-muted">Subtotal</td>
+            <td style="padding:14px 8px;"></td>
+            <td style="padding:14px 0;text-align:right;color:#718096;" class="text-muted">$378.00</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 0;color:#718096;" class="text-muted">Discount (LAUNCH25)</td>
+            <td style="padding:4px 8px;"></td>
+            <td style="padding:4px 0;text-align:right;color:#b8ff57;">−$94.50</td>
+          </tr>
+          <tr>
+            <td style="padding:4px 0;color:#718096;" class="text-muted">Tax</td>
+            <td style="padding:4px 8px;"></td>
+            <td style="padding:4px 0;text-align:right;color:#718096;" class="text-muted">$22.68</td>
+          </tr>
+          <tr>
+            <td style="padding:16px 0 0;font-size:17px;font-weight:700;" class="text-dark">Total Charged</td>
+            <td style="padding:16px 8px 0;"></td>
+            <td style="padding:16px 0 0;text-align:right;font-size:17px;font-weight:700;" class="text-dark">$306.18</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <!-- Track Order CTA -->
+    <mj-section background-color="#ffffff" padding="32px" css-class="email-wrap">
+      <mj-column>
+        <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="14%" stroke="f" fillcolor="#b8ff57">
+          <w:anchorlock/>
+          <center style="color:#0c1220;font-family:sans-serif;font-size:14px;font-weight:700;">Track Your Order</center>
+        </v:roundrect>
+        <![endif]-->
+        <!--[if !mso]><!-->
+        <mj-button background-color="#b8ff57" color="#0c1220" font-weight="700" border-radius="6px" href="#" font-size="14px" inner-padding="13px 28px">
+          Track Your Order
+        </mj-button>
+        <!--<![endif]-->
+        <mj-text font-size="13px" color="#718096" padding-top="8px" css-class="text-muted">
+          You'll receive a shipping confirmation with tracking info once your order ships.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Shipping + Delivery -->
+    <mj-section background-color="#f7f9fc" padding="24px 32px" css-class="info-box">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" padding-bottom="8px" css-class="text-muted">
+          Billing
+        </mj-text>
+        <mj-text font-size="14px" color="#1a1a2e" line-height="1.7" css-class="text-dark">
+          Jane Smith<br />
+          jane.smith@example.com<br />
+          Visa ending in 4242
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="12px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" padding-bottom="8px" css-class="text-muted">
+          Estimated Delivery
+        </mj-text>
+        <mj-text font-size="14px" color="#1a1a2e" line-height="1.7" css-class="text-dark">
+          March 24–26, 2026<br />
+          <span style="color:#7a8aaa;font-size:13px;">Digital delivery via email</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Help -->
+    <mj-section background-color="#ffffff" padding="24px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="13px" color="#718096" css-class="text-muted">
+          Questions? Reply to this email or visit our <a href="#" style="color:#b8ff57;">Help Center</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#0c1220" padding="32px" css-class="footer-bg">
+      <mj-column>
+        <mj-text font-size="12px" color="#7a8aaa" line-height="1.7" css-class="text-muted">
+          This is a transactional email regarding your Acme Corp account. You cannot unsubscribe from order confirmations.<br />
+          <a href="#" style="color:#7a8aaa;">Privacy Policy</a> · <a href="#" style="color:#7a8aaa;">Terms of Service</a>
+        </mj-text>
+        <mj-text font-size="11px" color="#4a5568" padding-top="12px" css-class="text-muted">
+          Acme Corp Inc. · 123 Market Street, Suite 400 · San Francisco, CA 94105
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

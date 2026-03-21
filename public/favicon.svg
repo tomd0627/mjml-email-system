@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>MJML Email System</title>
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="#0c1220"/>
+  <!-- Envelope body -->
+  <rect x="4" y="9" width="24" height="16" rx="2.5" fill="none" stroke="#b8ff57" stroke-width="1.75"/>
+  <!-- Envelope flap (open V) -->
+  <polyline points="4,9.5 16,19.5 28,9.5" fill="none" stroke="#b8ff57" stroke-width="1.75" stroke-linejoin="round"/>
+  <!-- Small left line -->
+  <line x1="4" y1="25" x2="11" y2="18.5" stroke="#b8ff57" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <!-- Small right line -->
+  <line x1="28" y1="25" x2="21" y2="18.5" stroke="#b8ff57" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

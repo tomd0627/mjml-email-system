@@ -1,0 +1,17 @@
+{
+  "name": "mjml-email-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:emails": "node scripts/build-emails.js",
+    "dev": "npm run build:emails && vite",
+    "build": "npm run build:emails && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "mjml": "^4.15.3",
+    "nodemailer": "^8.0.3",
+    "vite": "^6.4.1"
+  }
+}

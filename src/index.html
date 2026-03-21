@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A portfolio showcase of professional MJML email templates demonstrating cross-client compatibility, responsive design, and email development expertise." />
+
+    <!-- Preconnect for CDN resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="MJML Email Template System" />
+    <meta property="og:description" content="5 production-ready email templates: newsletter, transactional, promotional, welcome, and password reset. Built with MJML for cross-client compatibility." />
+
+    <title>MJML Email Templates</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Prism.js — syntax highlighting (Tomorrow Night theme) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Site styles -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+  </head>
+
+  <body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Site Navigation -->
+    <header role="banner">
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav__inner">
+          <span class="site-nav__logo" aria-hidden="true">MJML Email System</span>
+          <ul class="site-nav__links" id="site-nav-links" role="list">
+            <li><a href="#gallery">Templates</a></li>
+            <li><a href="#viewer">Preview</a></li>
+            <li><a href="#compat">Compatibility</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#stack">Stack</a></li>
+          </ul>
+          <button
+            type="button"
+            class="site-nav__toggle"
+            aria-expanded="false"
+            aria-controls="site-nav-links"
+            aria-label="Open navigation menu"
+          >
+            <span class="site-nav__toggle-bar"></span>
+            <span class="site-nav__toggle-bar"></span>
+            <span class="site-nav__toggle-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+
+      <!-- ============================================================
+           Hero
+      ============================================================ -->
+      <section id="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <p class="hero__eyebrow">Portfolio Project · Email Development</p>
+
+          <h1 id="hero-heading" class="hero__heading">
+            Professional Email<br />
+            Templates Built<br />
+            with <mark>MJML</mark>
+          </h1>
+
+          <p class="hero__desc">
+            5 production-ready templates — newsletter, transactional, promotional,
+            welcome, and password reset — compiled for cross-client compatibility across
+            Gmail, Outlook, and Apple Mail.
+          </p>
+
+          <div class="hero__badges" aria-label="Skills demonstrated">
+            <span class="badge badge--accent">MJML 4.x</span>
+            <span class="badge badge--accent">Cross-Client HTML</span>
+            <span class="badge badge--accent">Outlook VML Fallbacks</span>
+            <span class="badge badge--accent">Dark Mode Emails</span>
+            <span class="badge badge--warm">CAN-SPAM Compliance</span>
+            <span class="badge badge--warm">Responsive Design</span>
+            <span class="badge">Vite</span>
+            <span class="badge">Node.js Build Pipeline</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Template Gallery
+      ============================================================ -->
+      <section id="gallery" class="site-section" aria-labelledby="gallery-heading">
+        <div class="container">
+          <p class="section-label" aria-hidden="true">Templates</p>
+          <h2 id="gallery-heading" class="section-heading">5 Polished Templates</h2>
+          <p class="section-desc">
+            Each template is authored in MJML, compiled to battle-tested HTML, and tested
+            across major email clients. Click any card to inspect the source code and live preview.
+          </p>
+
+          <!-- Gallery cards are injected here by template-gallery.js -->
+          <ul
+            id="template-gallery"
+            class="gallery__grid"
+            role="list"
+            aria-label="Email template gallery"
+          ></ul>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Template Viewer
+      ============================================================ -->
+      <section id="viewer" aria-labelledby="viewer-heading">
+        <div class="container">
+          <p class="section-label" aria-hidden="true">Preview</p>
+          <h2 id="viewer-heading" class="section-heading">Template Inspector</h2>
+          <p class="section-desc">
+            Toggle between a live preview, the MJML source, and the compiled HTML output.
+          </p>
+
+          <!-- aria-live region for screen reader announcements -->
+          <div
+            id="viewer-live-region"
+            class="viewer-live-region"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+
+          <!-- Viewer panel is built by template-viewer.js -->
+          <div id="template-viewer" style="margin-top: 2rem;"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Cross-Client Compatibility
+      ============================================================ -->
+      <section id="compat" class="site-section" aria-labelledby="compat-heading">
+        <div class="container">
+          <p class="section-label" aria-hidden="true">Testing</p>
+          <h2 id="compat-heading" class="section-heading">Cross-Client Compatibility</h2>
+          <p class="section-desc">
+            Email clients are notoriously inconsistent. MJML abstracts the worst quirks —
+            here's how the templates hold up across the clients that matter most.
+          </p>
+
+          <!-- Client compatibility matrix -->
+          <div class="compat-matrix" role="list" aria-label="Email client compatibility results">
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/gmail-chrome-desktop.png"
+                alt="Newsletter template rendered in Gmail on Chrome desktop"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Gmail — Chrome (Desktop)
+                <span class="compat-status compat-status--pass" aria-label="Pass">Full support</span>
+              </figcaption>
+            </figure>
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/gmail-mobile.png"
+                alt="Newsletter template rendered in Gmail on a mobile device"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Gmail — Mobile (iOS)
+                <span class="compat-status compat-status--pass" aria-label="Pass">Full support</span>
+              </figcaption>
+            </figure>
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/outlook-web-chrome.png"
+                alt="Newsletter template rendered in Outlook.com on Chrome"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Outlook.com — Chrome
+                <span class="compat-status compat-status--pass" aria-label="Pass">Full support</span>
+              </figcaption>
+            </figure>
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/outlook-365-windows.png"
+                alt="Newsletter template rendered in Outlook 365 on Windows"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Outlook 365 — Windows
+                <span class="compat-status compat-status--partial" aria-label="Partial support">VML fallbacks active</span>
+              </figcaption>
+            </figure>
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/apple-mail-macos.png"
+                alt="Newsletter template rendered in Apple Mail on macOS"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Apple Mail — macOS
+                <span class="compat-status compat-status--pass" aria-label="Pass">Full support + dark mode</span>
+              </figcaption>
+            </figure>
+
+            <figure class="compat-item" role="listitem">
+              <img
+                src="/assets/screenshots/gmail-dark-mode.png"
+                alt="Newsletter template in Gmail dark mode"
+                width="400"
+                height="300"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='/assets/screenshots/placeholder.svg'"
+              />
+              <figcaption>
+                Gmail — Dark Mode
+                <span class="compat-status compat-status--pass" aria-label="Pass">Dark mode aware</span>
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <!-- Testing approach note -->
+          <div class="testing-note" role="note">
+            <span class="testing-note__icon" aria-hidden="true"><i data-lucide="flask-conical"></i></span>
+            <div class="testing-note__text">
+              <strong>Testing approach:</strong> Templates were sent via
+              <a href="https://mailtrap.io" target="_blank" rel="noopener noreferrer">Mailtrap</a>
+              (free SMTP sandbox) and opened in real email clients for screenshots.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Workflow & Gotchas
+      ============================================================ -->
+      <section id="workflow" class="site-section" aria-labelledby="workflow-heading">
+        <div class="container">
+          <p class="section-label" aria-hidden="true">Documentation</p>
+          <h2 id="workflow-heading" class="section-heading">Workflow &amp; Gotchas</h2>
+          <p class="section-desc">
+            The MJML-to-inbox pipeline, the quirks that bite you, and how to handle them.
+          </p>
+
+          <div class="workflow-list" style="margin-top: 2.5rem;">
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="settings-2"></i></span>
+                  The MJML compilation workflow
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  MJML templates (<code>.mjml</code>) are authored in a JSX-like component syntax
+                  and compiled to email-safe HTML at build time by <code>scripts/build-emails.js</code>.
+                  This keeps the source clean and readable while producing the inline-style-heavy HTML
+                  that email clients require.
+                </p>
+                <p>
+                  The build script uses <code>mjml(source, { validationLevel: 'strict' })</code>
+                  and exits with a non-zero code on any validation error — so broken templates never
+                  reach production.
+                </p>
+                <pre>
+# Compile all templates
+npm run build:emails
+
+# Start dev server (auto-compiles first)
+npm run dev
+
+# Production build
+npm run build</pre>
+              </div>
+            </details>
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="mail"></i></span>
+                  Outlook and VML button fallbacks
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  Outlook 2007–2019 renders HTML using Microsoft Word's engine, which ignores
+                  CSS <code>border-radius</code>. This means a styled <code>&lt;a&gt;</code> button
+                  will appear as a flat rectangle with square corners.
+                </p>
+                <p>
+                  The fix is a VML (Vector Markup Language) fallback wrapped in MSO conditional comments.
+                  VML is a legacy Microsoft format that Outlook's Word-based renderer does support.
+                  All templates in this project include it on every CTA button:
+                </p>
+                <pre>
+&lt;!--[if mso]&gt;
+&lt;v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+  href="#" style="height:44px;v-text-anchor:middle;width:180px;"
+  arcsize="14%" stroke="f" fillcolor="#b8ff57"&gt;
+  &lt;w:anchorlock/&gt;
+  &lt;center style="color:#0c1220;font-family:sans-serif;
+    font-size:14px;font-weight:700;"&gt;
+    Button Label
+  &lt;/center&gt;
+&lt;/v:roundrect&gt;
+&lt;![endif]--&gt;
+&lt;!--[if !mso]&gt;&lt;!--&gt;
+  &lt;!-- MJML mj-button renders here --&gt;
+&lt;!--&lt;![endif]--&gt;</pre>
+              </div>
+            </details>
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="moon"></i></span>
+                  Dark mode email support
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  Several email clients — including Apple Mail, iOS Mail, and newer versions of
+                  Outlook — auto-invert colors in dark mode. This can make a light-background email
+                  nearly unreadable.
+                </p>
+                <p>
+                  Each template includes a <code>@media (prefers-color-scheme: dark)</code> block
+                  inside <code>&lt;mj-style&gt;</code>. Key rules use <code>!important</code> to
+                  override inline styles (which MJML generates) and target elements by CSS class names
+                  applied via <code>css-class</code> attributes on MJML components.
+                </p>
+                <p>
+                  Note: Gmail on Android does not support <code>prefers-color-scheme</code> and
+                  applies its own color inversion. This is a known Gmail limitation with no reliable
+                  workaround that doesn't break light-mode rendering.
+                </p>
+              </div>
+            </details>
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="layout-panel-left"></i></span>
+                  Why all layout uses tables (and why that's correct)
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  Email clients strip <code>&lt;div&gt;</code>-based layouts. Flexbox and CSS Grid
+                  are unsupported in Outlook and have inconsistent support elsewhere. MJML compiles
+                  its component tree into nested HTML tables — the only reliable layout primitive
+                  across all clients.
+                </p>
+                <p>
+                  All layout tables in the compiled output include <code>role="presentation"</code>
+                  to suppress screen reader table announcements. This is the correct accessibility
+                  pattern for presentational tables in email.
+                </p>
+                <p>
+                  On the <em>portfolio site</em>, you will not find any table-based layouts. CSS
+                  Grid and Flexbox are used throughout — this is intentional and correct. The table
+                  pattern belongs exclusively inside email HTML.
+                </p>
+              </div>
+            </details>
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="triangle-alert"></i></span>
+                  Gmail CSS stripping
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  Gmail strips <code>&lt;head&gt;</code> styles from emails that are not in Google
+                  Workspace accounts (i.e., standard Gmail accounts). All styles must be inlined.
+                  MJML handles this automatically during compilation.
+                </p>
+                <p>
+                  Gmail also clips messages over ~102KB. Keep compiled HTML lean. Complex templates
+                  in this project stay well under that limit — check the output of
+                  <code>npm run build:emails</code> which logs compiled file sizes.
+                </p>
+                <p>
+                  Class-based <code>@media</code> query overrides (for dark mode) still work in
+                  Gmail when using Workspace — but not on free Gmail accounts. This is a known,
+                  unavoidable limitation.
+                </p>
+              </div>
+            </details>
+
+            <details class="workflow-item">
+              <summary>
+                <span class="workflow-summary-label">
+                  <span class="icon" aria-hidden="true"><i data-lucide="file-text"></i></span>
+                  CAN-SPAM and accessibility requirements
+                </span>
+                <span class="workflow-chevron" aria-hidden="true">+</span>
+              </summary>
+              <div class="workflow-body">
+                <p>
+                  All marketing and newsletter templates comply with CAN-SPAM Act requirements:
+                </p>
+                <p>
+                  • Unsubscribe link present in footer<br />
+                  • Physical mailing address in footer<br />
+                  • Clear identification as a commercial message<br />
+                  • Honest subject lines (in <code>&lt;mj-title&gt;</code>)
+                </p>
+                <p>
+                  Transactional templates (order confirmation, password reset) are exempt from
+                  unsubscribe requirements but include support and policy links in lieu.
+                </p>
+                <p>
+                  Accessibility: all images have <code>alt</code> attributes, link text is
+                  descriptive (no "click here"), and language is declared via <code>lang</code> on
+                  <code>&lt;html&gt;</code> (MJML adds this automatically).
+                </p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           Tech Stack
+      ============================================================ -->
+      <section id="stack" class="site-section" aria-labelledby="stack-heading">
+        <div class="container">
+          <p class="section-label" aria-hidden="true">Built With</p>
+          <h2 id="stack-heading" class="section-heading">Tech Stack</h2>
+          <p class="section-desc">
+            A purposefully lean stack — every tool earns its place.
+          </p>
+
+          <div class="stack-grid">
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="mail"></i></div>
+              <h3 class="stack-card__name">MJML 4.x</h3>
+              <p class="stack-card__desc">
+                The email templating framework that compiles to battle-tested HTML.
+                Handles table layouts, inline styles, and client quirks automatically.
+              </p>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="zap"></i></div>
+              <h3 class="stack-card__name">Vite 6</h3>
+              <p class="stack-card__desc">
+                Modern build tool and dev server. Zero-config for this project's
+                vanilla JS + CSS setup, with sub-second HMR in development.
+              </p>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="code-2"></i></div>
+              <h3 class="stack-card__name">Vanilla JS (ES Modules)</h3>
+              <p class="stack-card__desc">
+                No framework overhead for a static showcase site. Private class
+                fields, async/await, IntersectionObserver, Clipboard API.
+              </p>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="paintbrush"></i></div>
+              <h3 class="stack-card__name">Prism.js</h3>
+              <p class="stack-card__desc">
+                Syntax highlighting for MJML and HTML source code panels. Loaded via CDN
+                — zero impact on the JS bundle size.
+              </p>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="rocket"></i></div>
+              <h3 class="stack-card__name">Netlify</h3>
+              <p class="stack-card__desc">
+                Static deploy on Netlify's free tier. Every push to
+                <code>master</code> triggers an automatic build and deploy.
+              </p>
+            </div>
+
+            <div class="stack-card">
+              <div class="stack-card__icon" aria-hidden="true"><i data-lucide="flask-conical"></i></div>
+              <h3 class="stack-card__name">Mailtrap</h3>
+              <p class="stack-card__desc">
+                Free SMTP sandbox for email testing. Compiled HTML is sent via
+                <code>scripts/send-test.js</code> and previewed in real clients.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Build pipeline diagram -->
+          <h3 style="font-size: 1rem; font-weight: 700; color: var(--color-text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3rem; margin-bottom: 1rem;">
+            Build Pipeline
+          </h3>
+          <div class="pipeline" aria-label="Build pipeline: MJML source compiled to HTML, then Vite builds the site, then Netlify deploys">
+            <div class="pipeline__step">
+              <span class="step-icon" aria-hidden="true"><i data-lucide="pencil-line"></i></span>
+              <span><code>.mjml</code> source</span>
+            </div>
+            <span class="pipeline__arrow" aria-hidden="true">→</span>
+            <div class="pipeline__step">
+              <span class="step-icon" aria-hidden="true"><i data-lucide="settings-2"></i></span>
+              <span>build-emails.js</span>
+            </div>
+            <span class="pipeline__arrow" aria-hidden="true">→</span>
+            <div class="pipeline__step">
+              <span class="step-icon" aria-hidden="true"><i data-lucide="file-code"></i></span>
+              <span>compiled <code>.html</code></span>
+            </div>
+            <span class="pipeline__arrow" aria-hidden="true">→</span>
+            <div class="pipeline__step">
+              <span class="step-icon" aria-hidden="true"><i data-lucide="zap"></i></span>
+              <span>Vite build</span>
+            </div>
+            <span class="pipeline__arrow" aria-hidden="true">→</span>
+            <div class="pipeline__step">
+              <span class="step-icon" aria-hidden="true"><i data-lucide="rocket"></i></span>
+              <span>Netlify deploy</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="site-footer__inner">
+        <span class="site-footer__logo">MJML Email System</span>
+        <p class="site-footer__copy">
+          Built with MJML, Vite, and vanilla JS
+        </p>
+      </div>
+    </footer>
+
+    <!-- Prism.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+    <!-- App -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

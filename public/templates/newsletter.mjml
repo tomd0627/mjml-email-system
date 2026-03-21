@@ -1,0 +1,193 @@
+<mjml>
+  <mj-head>
+    <mj-title>Acme Corp Weekly Digest — March 2026</mj-title>
+    <mj-preview>This week: product updates, engineering insights, and community highlights from Acme Corp.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#1a1a2e" />
+      <mj-section background-color="#ffffff" padding="0" />
+      <mj-button font-size="14px" font-weight="600" border-radius="6px" inner-padding="12px 24px" />
+    </mj-attributes>
+
+    <mj-style>
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        .email-body   { background-color: #0c1220 !important; }
+        .email-wrap   { background-color: #131c2e !important; }
+        .card-bg      { background-color: #1a2540 !important; }
+        .text-dark    { color: #e8f0ff !important; }
+        .text-muted   { color: #7a8aaa !important; }
+        .divider-line { border-color: #1e2d4a !important; }
+        .footer-bg    { background-color: #0c1220 !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#f4f6f9" css-class="email-body">
+
+    <!-- Header -->
+    <mj-section background-color="#0c1220" padding="24px 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="22px" font-weight="700" color="#b8ff57" letter-spacing="-0.5px">
+          Acme Corp
+        </mj-text>
+        <mj-text font-size="13px" color="#7a8aaa" padding-top="4px">
+          Weekly Digest · March 2026
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-size="13px" color="#7a8aaa" padding-top="16px">
+          <a href="#" style="color:#7a8aaa;text-decoration:none;margin:0 8px;">Products</a>
+          <a href="#" style="color:#7a8aaa;text-decoration:none;margin:0 8px;">Blog</a>
+          <a href="#" style="color:#b8ff57;text-decoration:none;margin:0 8px;">Subscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero Article -->
+    <mj-section background-color="#ffffff" padding="0" css-class="email-wrap">
+      <mj-column padding="0">
+        <mj-image
+          src="https://placehold.co/600x280/0c1220/b8ff57?text=Feature+Story"
+          alt="This week's feature story: Scaling to 10 million users"
+          width="600px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="32px 32px 24px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" color="#ff7c38" letter-spacing="1.5px" text-transform="uppercase" padding-bottom="8px" css-class="text-muted">
+          Feature Story
+        </mj-text>
+        <mj-text font-size="26px" font-weight="700" line-height="1.3" color="#1a1a2e" padding-bottom="12px" css-class="text-dark">
+          How We Scaled Acme Corp to 10 Million Users Without Rewriting Everything
+        </mj-text>
+        <mj-text font-size="16px" color="#4a5568" line-height="1.7" padding-bottom="20px" css-class="text-muted">
+          Three years ago, our infrastructure was held together with hope and cron jobs. Here's the honest story of what we changed, what we kept, and what we'd do differently.
+        </mj-text>
+        <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:44px;v-text-anchor:middle;width:160px;" arcsize="14%" stroke="f" fillcolor="#b8ff57">
+          <w:anchorlock/>
+          <center style="color:#0c1220;font-family:sans-serif;font-size:14px;font-weight:700;">Read the Story</center>
+        </v:roundrect>
+        <![endif]-->
+        <!--[if !mso]><!-->
+        <mj-button background-color="#b8ff57" color="#0c1220" align="left" href="#">
+          Read the Story
+        </mj-button>
+        <!--<![endif]-->
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider -->
+    <mj-section background-color="#ffffff" padding="0 32px" css-class="email-wrap">
+      <mj-column>
+        <mj-divider border-color="#e2e8f0" border-width="1px" css-class="divider-line" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Section Label -->
+    <mj-section background-color="#ffffff" padding="24px 32px 16px" css-class="email-wrap">
+      <mj-column>
+        <mj-text font-size="11px" font-weight="700" color="#7a8aaa" letter-spacing="1.5px" text-transform="uppercase" css-class="text-muted">
+          This Week's Highlights
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- 3-Column Article Cards -->
+    <mj-section background-color="#ffffff" padding="0 24px 32px" css-class="email-wrap">
+
+      <mj-column padding="8px" border-radius="8px" css-class="card-bg">
+        <mj-image
+          src="https://placehold.co/180x100/1a2540/b8ff57?text=API"
+          alt="New REST API v3 release announcement"
+          border-radius="6px"
+          padding="0 0 12px"
+        />
+        <mj-text font-size="11px" color="#ff7c38" font-weight="700" letter-spacing="1px" text-transform="uppercase" padding-bottom="4px" css-class="text-muted">
+          Engineering
+        </mj-text>
+        <mj-text font-size="15px" font-weight="600" color="#1a1a2e" line-height="1.4" padding-bottom="8px" css-class="text-dark">
+          REST API v3 is now generally available
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.6" padding-bottom="12px" css-class="text-muted">
+          Faster, more predictable, and fully typed — with a smooth migration path from v2.
+        </mj-text>
+        <mj-text font-size="13px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Read more →</a>
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="8px" border-radius="8px" css-class="card-bg">
+        <mj-image
+          src="https://placehold.co/180x100/1a2540/ff7c38?text=Design"
+          alt="Design system 2.0 launch"
+          border-radius="6px"
+          padding="0 0 12px"
+        />
+        <mj-text font-size="11px" color="#ff7c38" font-weight="700" letter-spacing="1px" text-transform="uppercase" padding-bottom="4px" css-class="text-muted">
+          Design
+        </mj-text>
+        <mj-text font-size="15px" font-weight="600" color="#1a1a2e" line-height="1.4" padding-bottom="8px" css-class="text-dark">
+          Design System 2.0 drops this month
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.6" padding-bottom="12px" css-class="text-muted">
+          New tokens, dark mode first-class, and Figma variables that stay in sync with code.
+        </mj-text>
+        <mj-text font-size="13px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Read more →</a>
+        </mj-text>
+      </mj-column>
+
+      <mj-column padding="8px" border-radius="8px" css-class="card-bg">
+        <mj-image
+          src="https://placehold.co/180x100/1a2540/e8f0ff?text=Community"
+          alt="Community spotlight: 500 contributors milestone"
+          border-radius="6px"
+          padding="0 0 12px"
+        />
+        <mj-text font-size="11px" color="#ff7c38" font-weight="700" letter-spacing="1px" text-transform="uppercase" padding-bottom="4px" css-class="text-muted">
+          Community
+        </mj-text>
+        <mj-text font-size="15px" font-weight="600" color="#1a1a2e" line-height="1.4" padding-bottom="8px" css-class="text-dark">
+          500 contributors and counting
+        </mj-text>
+        <mj-text font-size="13px" color="#718096" line-height="1.6" padding-bottom="12px" css-class="text-muted">
+          A thank-you to every person who filed a bug, wrote a doc, or answered a question.
+        </mj-text>
+        <mj-text font-size="13px">
+          <a href="#" style="color:#b8ff57;font-weight:600;text-decoration:none;">Read more →</a>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#0c1220" padding="32px" css-class="footer-bg">
+      <mj-column>
+        <mj-text font-size="13px" color="#b8ff57" font-weight="700" padding-bottom="8px">
+          Acme Corp
+        </mj-text>
+        <mj-text font-size="12px" color="#7a8aaa" line-height="1.7" css-class="text-muted">
+          You're receiving this because you subscribed to the Acme Corp Weekly Digest.<br />
+          <a href="#" style="color:#7a8aaa;">Unsubscribe</a> · <a href="#" style="color:#7a8aaa;">Update preferences</a> · <a href="#" style="color:#7a8aaa;">View in browser</a>
+        </mj-text>
+        <mj-text font-size="11px" color="#4a5568" padding-top="12px" css-class="text-muted">
+          Acme Corp Inc. · 123 Market Street, Suite 400 · San Francisco, CA 94105
+        </mj-text>
+      </mj-column>
+      <mj-column>
+        <mj-text align="right" font-size="13px" color="#7a8aaa" css-class="text-muted">
+          <a href="#" style="color:#7a8aaa;text-decoration:none;margin:0 6px;">Twitter</a>
+          <a href="#" style="color:#7a8aaa;text-decoration:none;margin:0 6px;">LinkedIn</a>
+          <a href="#" style="color:#7a8aaa;text-decoration:none;margin:0 6px;">GitHub</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
