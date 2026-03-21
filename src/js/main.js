@@ -1,6 +1,6 @@
+import { initNavHighlight } from './nav-highlight.js';
 import { TemplateGallery } from './template-gallery.js';
 import { TemplateViewer } from './template-viewer.js';
-import { initNavHighlight } from './nav-highlight.js';
 
 async function init() {
   // Fetch the manifest built by scripts/build-emails.js
@@ -10,14 +10,14 @@ async function init() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     manifest = await res.json();
   } catch (err) {
-    console.error('[MJML System] Could not load template manifest:', err);
+    console.warn('[MJML System] Could not load template manifest:', err);
   }
 
   const galleryEl = document.getElementById('template-gallery');
   const viewerEl  = document.getElementById('template-viewer');
 
   if (!galleryEl || !viewerEl) {
-    console.error('[MJML System] Required DOM elements not found.');
+    console.warn('[MJML System] Required DOM elements not found.');
     return;
   }
 

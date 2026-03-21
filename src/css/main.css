@@ -217,7 +217,7 @@ header[role="banner"] {
 }
 
 .site-nav__links a:hover,
-.site-nav__links a[aria-current="page"] {
+.site-nav__links a[aria-current="location"] {
   color: var(--color-accent);
   border-bottom-color: var(--color-accent);
 }
