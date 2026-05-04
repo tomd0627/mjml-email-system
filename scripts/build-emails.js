@@ -47,7 +47,7 @@ for (const filename of mjmlFiles) {
 
   let result;
   try {
-    result = mjml2html(source, {
+    result = await mjml2html(source, {
       validationLevel: 'soft',
       filePath: srcPath,
     });
