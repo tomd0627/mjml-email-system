@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "mjml": "^5.2.1",
-    "nodemailer": "^8.0.7",
-    "vite": "^8.0.13"
+    "mjml": "^5.2.2",
+    "nodemailer": "^8.0.8",
+    "vite": "^8.0.14"
   }
 }
